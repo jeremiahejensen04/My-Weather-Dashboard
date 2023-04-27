@@ -1,5 +1,5 @@
 //API key
-var key = 'd91f90fd08eb1b800a68add91b40fe84';
+var key = '9668a77d5244e7ed0e5cabbc56a7ee09';
 var city = 'Austin';
 
 //Variables for current day
