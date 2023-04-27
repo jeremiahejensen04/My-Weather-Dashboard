@@ -1,6 +1,6 @@
 //API key
 var key = '9668a77d5244e7ed0e5cabbc56a7ee09';
-var city = 'Austin';
+var city = 'Houston';
 
 //Variables for current day
 var date = moment().format('dddd, MMMM Do YYYY');
