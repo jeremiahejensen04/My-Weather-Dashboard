@@ -9,18 +9,6 @@ var currentTime = moment().format('YYYY-MM-DD HH:MM:SS');
 
 //Saves text input of city searched and stores into an array in local storage
 var cityInputs = [];
-$('.search').on('click', function (event) {
-    event.preventDefault();
-    city = $(this).parent('.btnPar').siblings('.textVal').val().trim();
-    if (city === '') {
-        return;
-    };
-    cityInputs.push(city);
-    localStorage.setItem('city', JSON.stringify(cityInputs));
-    fiveDayForecastEl.empty();
-    getHistory();
-    todaysWeather();
-});
 
 //Displays city history buttons
 var constHistEl = $('.cityHist');
@@ -139,6 +127,19 @@ function fiveDayForecast () {
 });
 };
 
+$('.search').on('click', function (event) {
+    event.preventDefault();
+    city = $(this).parent('.btnPar').siblings('.textVal').val().trim();
+    if (city === '') {
+        return;
+    };
+    cityInputs.push(city);
+    localStorage.setItem('city', JSON.stringify(cityInputs));
+    fiveDayForecastEl.empty();
+    getHistory();
+    todaysWeather();
+});
+
 //Example data from Houston loads when page is refreshed
 function exampleData() {
 
@@ -152,4 +153,4 @@ function exampleData() {
     
 };
 
-exampleData();
+//exampleData();
