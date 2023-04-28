@@ -1,5 +1,6 @@
 //API key
 var key = '9668a77d5244e7ed0e5cabbc56a7ee09';
+
 var city = 'Houston';
 
 //Variables for current day
@@ -138,7 +139,7 @@ function fiveDayForecast () {
 });
 };
 
-//Example data from Austin loads when page is refreshed
+//Example data from Houston loads when page is refreshed
 function exampleData() {
 
 	var cityHistStore = JSON.parse(localStorage.getItem('city'));
