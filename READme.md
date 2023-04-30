@@ -6,7 +6,7 @@ This app displays the up-to-date weather of a given city, plus a five-day foreca
 
 ## Installation
 
-Follow this link to access the application: https://github.com/jeremiahejensen04/My-Weather-Dashboard
+Follow this link to access the application: https://jeremiahejensen04.github.io/My-Weather-Dashboard/
 
 ## Usage
 
